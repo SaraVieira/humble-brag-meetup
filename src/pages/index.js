@@ -11,7 +11,6 @@ import "./styles.css"
 
 const IndexPage = ({ data: { allAirtable } }) => {
   const speakers = allAirtable.edges
-  console.log(speakers)
   return (
     <Layout>
       <SEO title="Humble Brag Meetup" keywords={[`meetup`, `humble`, `brag`]} />
