@@ -1,0 +1,11 @@
+
+<svg width="28px" height="34px" viewBox="0 0 28 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-371.000000, -421.000000)" stroke="#FFF78B" stroke-width="2">
+            <g id="map-pin" transform="translate(372.000000, 422.000000)">
+                <path d="M26,13.090909 C26,23.2727272 13,32 13,32 C13,32 0,23.2727272 0,13.090909 C1.06985893e-07,5.86099956 5.82029833,-3.22973973e-16 13,0 C20.1797017,3.22973973e-16 25.9999999,5.86099956 26,13.090909 L26,13.090909 Z" id="Path"></path>
+                <circle id="Oval" cx="13.5" cy="13.5" r="4.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
