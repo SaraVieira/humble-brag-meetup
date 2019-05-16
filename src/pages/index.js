@@ -54,7 +54,7 @@ const IndexPage = ({ data: { allAirtable } }) => {
         </a>
       </section>
       <h3 className="speakers-title">What?</h3>
-      <p>We gathered some amazing people and they have three rules.</p>
+      <p>We gathered some people and they have three rules.</p>
       <ol>
         <li>All talks are 10 minutes.</li>
         <li>They must take at least 8 minutes to introduce themselves.</li>
