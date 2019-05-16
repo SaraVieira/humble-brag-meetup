@@ -49,7 +49,7 @@ const IndexPage = ({ data: { allAirtable } }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          I AM IN
+          ATTEND
         </a>
       </section>
       <h3 className="speakers-title">What?</h3>
