@@ -39,7 +39,7 @@ const IndexPage = ({ data: { allAirtable } }) => {
               rel="noopener noreferrer"
               href="https://www.google.com/calendar/render?action=TEMPLATE&text=Humble+Brag+Meetup&location=Blacklane&dates=20190604T170000Z%2F20190604T190000Z"
             >
-              19:00, 4th June
+              19:00, 4th June (Add to Calendar)
             </a>
           </div>
         </div>
