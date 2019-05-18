@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Title = styled.h3`
   margin-top: 60px;
   font-size: 42px;
-  color: #fffae3;
+  color: ${props => props.theme.colors.pastel};
   margin-bottom: 40px;
 `
 
@@ -14,19 +14,19 @@ const Speakers = styled.ul`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
   margin: 0;
-  font-family: 'Roboto';
+  font-family: ${props => props.theme.fonts.sans};
   font-weight: bold;
   font-size: 16px;
-  color: #fcfcfc;
+  color: ${props => props.theme.colors.white};
 
   a {
     text-decoration: none;
-    color: #fcfcfc;
+    color: ${props => props.theme.colors.white};
   }
 
   img {
     border-radius: 4px;
-    border: 3px solid #fcfcfc;
+    border: 3px solid ${props => props.theme.colors.white};
     margin: 0;
 
     :hover {
@@ -49,7 +49,7 @@ const Job = styled.span`
   font-weight: normal;
 `
 
-export default ({ speakers}) => (
+export default ({ speakers }) => (
   <>
     <Title>What?</Title>
     <p>We gathered some people and they have three rules.</p>

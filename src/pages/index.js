@@ -10,16 +10,18 @@ import './styles.css'
 import Info from '../components/Info'
 import Speakers from '../components/Speakers'
 
-const IndexPage = ({ data: { allAirtable } }) => {
+const IndexPage = ({
+  data: {
+    allAirtable,
+    site: { siteMetadata }
+  }
+}) => {
   const speakers = allAirtable.edges
   return (
     <Layout>
-      <SEO title="Humble Brag Meetup" keywords={[`meetup`, `humble`, `brag`]} />
-      <Title>#HumbleBragMeetup</Title>
-      <Subtitle>
-        Watch humble humans struggle as they have to talk about themselves for 8
-        minutes
-      </Subtitle>
+      <SEO keywords={[`meetup`, `humble`, `brag`]} />
+      <Title>#{siteMetadata.title.split(' ').join('')}</Title>
+      <Subtitle>{siteMetadata.description}</Subtitle>
       <Info />
       <Speakers speakers={speakers} />
       <h3 className="speakers-title">Want to speak?</h3>
@@ -29,21 +31,17 @@ const IndexPage = ({ data: { allAirtable } }) => {
         `}
       >
         Please DM{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={`https://twitter.com/NikkitaFTW`}
-        >
-          @NikkitaFTW
-        </a>{' '}
-        or{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={`https://twitter.com/NikkitaFTW`}
-        >
-          @carolstran
-        </a>{' '}
+        {siteMetadata.organizers.map(organizer => (
+          <>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://twitter.com/${organizer.twitter}`}
+            >
+              @{organizer.twitter}
+            </a>{' '}
+          </>
+        ))}{' '}
         on Twitter
       </p>
     </Layout>
@@ -52,6 +50,15 @@ const IndexPage = ({ data: { allAirtable } }) => {
 
 export const Query = graphql`
   {
+    site {
+      siteMetadata {
+        description
+        title
+        organizers {
+          twitter
+        }
+      }
+    }
     allAirtable(sort: { fields: data___Name }) {
       edges {
         node {

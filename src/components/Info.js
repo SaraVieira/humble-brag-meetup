@@ -30,16 +30,16 @@ const LocationAndTime = styled.div`
 `
 
 const Button = styled.a`
-  background: #fef58a;
+  background: ${props => props.theme.colors.yellow};
   border-radius: 8px;
   font-size: 24px;
-  color: #f7567c;
+  color: ${props => props.theme.colors.red};
   text-decoration: none;
   padding: 8px 47px;
   transition: all 200ms ease;
 
   &:hover {
-    color: #fef58a;
+    color: ${props => props.theme.colors.yellow};
     background: #632432;
   }
 
