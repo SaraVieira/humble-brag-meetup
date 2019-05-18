@@ -1,14 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-
-import { Title, Subtitle } from './__elements'
-
-import './styles.css'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import Info from '../components/Info'
 import Speakers from '../components/Speakers'
+
+import { Title, Subtitle } from '../components/Typography'
 
 const IndexPage = ({
   data: {
@@ -19,7 +17,7 @@ const IndexPage = ({
   const speakers = allAirtable.edges
   return (
     <Layout>
-      <SEO keywords={[`meetup`, `humble`, `brag`]} />
+      <SEO />
       <Title>#{siteMetadata.title.split(' ').join('')}</Title>
       <Subtitle>{siteMetadata.description}</Subtitle>
       <Info />

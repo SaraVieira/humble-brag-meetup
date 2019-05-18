@@ -25,3 +25,10 @@ export const Subtitle = styled.h2`
     font-size: 24px;
   }
 `
+
+export const Heading3 = styled.h3`
+  margin-top: 60px;
+  font-size: 42px;
+  color: ${props => props.theme.colors.pastel};
+  margin-bottom: 40px;
+`

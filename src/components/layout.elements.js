@@ -22,7 +22,7 @@ body {
   font-family: ${props => props.theme.fonts.default};
   color: ${props => props.theme.colors.white};
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-    height: 100%;
+  height: 100%;
 }
 
 a {

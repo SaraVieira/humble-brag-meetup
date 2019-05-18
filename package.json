@@ -4,12 +4,19 @@
   "description": "Watch humble humans struggle as they have to talk about themselves for 8 minutes",
   "version": "0.1.0",
   "author": "Carolyn Stransky & Sara Vieira",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.5.0",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-plugin-styled-components": "^3.0.7",
@@ -25,20 +32,11 @@
   "devDependencies": {
     "prettier": "^1.17.1"
   },
-  "keywords": [],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/SaraVieira/humble-brag-meetup"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/SaraVieira/humble-brag-meetup/issues"
   }
 }

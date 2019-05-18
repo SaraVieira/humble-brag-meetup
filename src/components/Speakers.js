@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-export const Title = styled.h3`
-  margin-top: 60px;
-  font-size: 42px;
-  color: ${props => props.theme.colors.pastel};
-  margin-bottom: 40px;
-`
+import { Heading3 } from './Typography'
 
 const Speakers = styled.ul`
   list-style: none;
@@ -51,7 +45,7 @@ const Job = styled.span`
 
 export default ({ speakers }) => (
   <>
-    <Title>What?</Title>
+    <Heading3>What?</Heading3>
     <p>We gathered some people and they have three rules.</p>
     <ol>
       <li>All talks are 10 minutes.</li>
@@ -59,7 +53,7 @@ export default ({ speakers }) => (
       <li>They must speak about a tech topic for the last 2 minutes.</li>
     </ol>
 
-    <Title>Speakers</Title>
+    <Heading3>Speakers</Heading3>
     <Speakers>
       {speakers.map(({ node: { data: speaker } }) => (
         <li>

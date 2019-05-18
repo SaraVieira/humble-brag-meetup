@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import LayoutCSS from './layout.elements.js'
+import LayoutCSS from './Layout.elements.js'
 
 const theme = {
   fonts: {
