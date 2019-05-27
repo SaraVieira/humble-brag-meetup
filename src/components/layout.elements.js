@@ -28,6 +28,10 @@ body {
 a {
   color: inherit;
 }
+.main {
+    margin: 0 auto;
+    max-width: 700px;
+}
 
 @media (max-width: 600px) {
   .main {

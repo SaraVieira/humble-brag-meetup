@@ -57,7 +57,10 @@ export const Query = graphql`
         }
       }
     }
-    allAirtable(sort: { fields: data___Name }) {
+    allAirtable(
+      filter: { table: { eq: "Speakers" } }
+      sort: { fields: data___Name }
+    ) {
       edges {
         node {
           data {

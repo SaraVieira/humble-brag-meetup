@@ -49,7 +49,7 @@ module.exports = {
           },
           {
             baseId: `appfpCQ68PP8qjDqu`,
-            tableName: `Atendees`
+            tableName: `Attendees`
           }
         ]
       }
