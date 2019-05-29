@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Heading3 } from './Typography'
-import shuffle from '../utils/shuffle'
 
 const Speakers = styled.ul`
   padding: 0;
@@ -57,7 +56,7 @@ export default ({ speakers }) => (
 
     <Heading3>Speakers</Heading3>
     <Speakers>
-      {shuffle(speakers).map(({ node: { data: speaker } }) => (
+      {speakers.map(({ node: { data: speaker } }) => (
         <li>
           <a
             target="_blank"
