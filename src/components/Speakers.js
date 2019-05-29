@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Heading3 } from './Typography'
+import shuffle from '../utils/shuffle'
 
 const Speakers = styled.ul`
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -55,7 +57,7 @@ export default ({ speakers }) => (
 
     <Heading3>Speakers</Heading3>
     <Speakers>
-      {speakers.map(({ node: { data: speaker } }) => (
+      {shuffle(speakers).map(({ node: { data: speaker } }) => (
         <li>
           <a
             target="_blank"

@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import Info from '../components/Info'
 import Speakers from '../components/Speakers'
+import Attendees from '../components/Attendees'
 
 import { Title, Subtitle } from '../components/Typography'
 
@@ -22,10 +23,11 @@ const IndexPage = ({
       <Subtitle>{siteMetadata.description}</Subtitle>
       <Info />
       <Speakers speakers={speakers} />
+      <Attendees />
       <h3 className="speakers-title">Want to speak?</h3>
       <p
         css={`
-          margin-bottom: 40;
+          margin-bottom: 40px;
         `}
       >
         Please DM{' '}
