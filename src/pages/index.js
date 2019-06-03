@@ -7,7 +7,7 @@ import Info from '../components/Info'
 import Speakers from '../components/Speakers'
 import Attendees from '../components/Attendees'
 
-import { Title, Subtitle } from '../components/Typography'
+import { Title, Subtitle, Heading3 } from '../components/Typography'
 
 const IndexPage = ({
   data: {
@@ -24,13 +24,13 @@ const IndexPage = ({
       <Info />
       <Speakers speakers={speakers} />
       <Attendees />
-      <h3 className="speakers-title">Want to speak?</h3>
+      <Heading3>Organizers</Heading3>
       <p
         css={`
           margin-bottom: 40px;
         `}
       >
-        Please DM{' '}
+        This meetup is brought you with 💛 by{' '}
         {siteMetadata.organizers.map(organizer => (
           <>
             <a
@@ -41,8 +41,7 @@ const IndexPage = ({
               @{organizer.twitter}
             </a>{' '}
           </>
-        ))}{' '}
-        on Twitter
+        ))}
       </p>
     </Layout>
   )

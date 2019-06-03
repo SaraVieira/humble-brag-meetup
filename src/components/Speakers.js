@@ -54,6 +54,17 @@ export default ({ speakers }) => (
       <li>They must speak about a tech topic for the last 2 minutes.</li>
     </ol>
 
+    <Heading3>Why?</Heading3>
+    <p>
+      There once was a talk from Prominent Tech Bro&trade; where he spent the
+      first 8 minutes bragging about his accomplishments and massaging his ego.
+    </p>
+    <p>
+      And we kept thinking... we know so many people who actually deserve an
+      8-minute intro but never would because they're too humble. So we created a
+      meetup and convinced some of them to join us on stage 😏
+    </p>
+
     <Heading3>Speakers</Heading3>
     <Speakers>
       {speakers.map(({ node: { data: speaker } }) => (
